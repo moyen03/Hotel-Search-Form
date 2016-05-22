@@ -8,6 +8,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Trivago Search Form Assingment</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js" integrity="sha256-WyjlLy3rvVSitHOXMctYkMCOU6GAletPg+qniNKLCQM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-beta.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -16,6 +20,27 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+        $(function() {
+            $("#checkin").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1,
+                onClose: function(selectedDate) {
+                    $("#checkout").datepicker("option", "minDate", selectedDate);
+                }
+            });
+            $("#checkout").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1,
+                onClose: function(selectedDate) {
+                    $("#checkin").datepicker("option", "maxDate", selectedDate);
+                }
+            });
+        });
+    </script>
+    </script>
 </head>
 
 <body>
@@ -54,11 +79,11 @@
                             <div class="date_section buttom_margin fix">
                                 <div class="check_in part1">
                                     <label for="checkin">CheckIn</label>
-                                    <input type="date" id="checkin" placeholder="Check-in dd/mm/yyyy" name="checkin" required>
+                                    <input type="text" id="checkin" placeholder="Check-in dd/mm/yyyy" name="checkin" required>
                                 </div>
                                 <div class="check_out part2">
                                     <label for="checkout">CheckOut</label>
-                                    <input type="date" id="checkin" placeholder="Check-out dd/mm/yyyy" name="checkout" required>
+                                    <input type="text" id="checkout" placeholder="Check-out dd/mm/yyyy" name="checkout" required>
                                 </div>
                                 <div class="adults part3">
                                     <input type="number" id="room" name="checkout" required>

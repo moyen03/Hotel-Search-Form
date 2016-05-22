@@ -112,12 +112,13 @@ label {
     width: 100%;
     margin: 0 auto;
 }
+
 .buttom_margin {
     margin-bottom: 50px;
 }
 
-.part1 input[type="date"],
-.part2 input[type="date"] {
+.part1 input[type="text"],
+.part2 input[type="text"] {
     width: 40%;
     float: left;
     margin-right: 3%;
@@ -126,18 +127,18 @@ label {
     height: 50px;
 }
 
-.part1 input[type="date"],
-.part2 input[type="date"],
+.part1 input[type="text"],
+.part2 input[type="text"],
 .part3 input[type="number"] {
     -webkit-border-radius: 2px;
     border-radius: 2px;
 }
 
-.part1 input[type="date"] {
+.part1 input[type="text"] {
     border-left: 4px solid #0081b5 !important;
 }
 
-.part2 input[type="date"] {
+.part2 input[type="text"] {
     border-left: 4px solid #ec9600 !important;
 }
 
@@ -149,24 +150,8 @@ label {
     height: 50px;
 }
 
-input[type="date"]:before {
-    content: attr(placeholder) !important;
-    color: #aaa;
-    margin-right: 0.5em;
-}
-
-input[type="date"]:focus:before,
-  input[type="date"]:valid:before {
-    content: "" !important;
-}
-
-.check_in {
-}
-
-.check_out {
-}
-
-.adults {
+input#checkin, input#checkout {
+    font-size: .875em;
 }
 
 input#room {
@@ -209,4 +194,3 @@ input[type=submit] {
     top: 10px;
     width: 28px;
 }
-

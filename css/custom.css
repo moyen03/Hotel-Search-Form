@@ -154,15 +154,6 @@ input#checkin, input#checkout {
     font-size: .875em;
 }
 
-/*input#room {*/
-/*    background-image: url("../images/adults.png");*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: 50% 50%;*/
-/*}*/
-
-/*input#room:focus, input#room:active {*/
-/*    background-image: none;*/
-/*}*/
 input.empty {
     background-image: url("../images/adults.png");
     background-repeat: no-repeat;

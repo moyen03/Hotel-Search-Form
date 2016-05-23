@@ -116,6 +116,7 @@ label {
 .buttom_margin {
     margin-bottom: 50px;
 }
+
 .check1,
 .check2 {
     position: relative;
@@ -155,6 +156,7 @@ label {
     /* IE 10+ */
     color: black;
 }
+
 .part1 input[type="text"],
 .part2 input[type="text"] {
     width: 40%;
@@ -191,6 +193,7 @@ label {
 input#checkin, input#checkout {
     font-size: .875em;
     padding-top: 20px;
+    color: #000 !important;
 }
 
 input.empty {

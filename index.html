@@ -39,7 +39,7 @@
                 }
             });
         });
-        
+
         function checkNumberField(field) {
             if (field.value == '') {
                 field.classList.add('empty')
@@ -47,7 +47,7 @@
                 field.classList.remove('empty')
             }
         }
-        
+
     </script>
 </head>
 
@@ -79,7 +79,7 @@
                 <div class="form_area">
 
                     <div class="main_form">
-                        <form id="form" class="formtrivago" action="#" method="GET">
+                        <form id="form" class="formtrivago" action="#">
                             <div class="form_field">
                                 <label for="city">City</label>
                                 <input type="text" id="city" placeholder="City" name="city" required>
@@ -102,6 +102,7 @@
                                 <div class="adults part3">
                                     <input type="number" onclick="checkNumberField(this)" class="room empty"  name="checkout" required>
                                 </div>
+
                             </div>
                             <div class="form_field">
                                 <button>

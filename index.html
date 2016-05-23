@@ -86,17 +86,22 @@
                             </div>
                             <div class="date_section buttom_margin fix">
                                 <div class="check_in part1">
+                                  <div class="check1">
                                     <label for="checkin">CheckIn</label>
-                                    <input type="text" id="checkin" placeholder="Check-in dd/mm/yyyy" name="checkin" required>
+                                    <input type="text" id="checkin" placeholder="dd/mm/yyyy" name="checkin" required>
+                                    <span class="calender_title1">Check-in</span>
+                                  </div>
                                 </div>
                                 <div class="check_out part2">
+                                    <div class="check2">
                                     <label for="checkout">CheckOut</label>
-                                    <input type="text" id="checkout" placeholder="Check-out dd/mm/yyyy" name="checkout" required>
+                                    <input type="text" id="checkout" placeholder="dd/mm/yyyy" name="checkout" required>
+                                    <span class="calender_title2">Check-out</span>
+                                </div>
                                 </div>
                                 <div class="adults part3">
-                                    <input type="number" id="room" class="empty" min="1" onclick="checkNumberField(this)" name="checkout" required>
+                                    <input type="number" onclick="checkNumberField(this)" class="room empty"  name="checkout" required>
                                 </div>
-
                             </div>
                             <div class="form_field">
                                 <button>

@@ -116,7 +116,45 @@ label {
 .buttom_margin {
     margin-bottom: 50px;
 }
+.check1,
+.check2 {
+    position: relative;
+    width: 100%;
+}
 
+.calender_title1,
+.calender_title2 {
+    color: #ada6a6;
+}
+
+.calender_title1 {
+    position: absolute;
+    top: 3px;
+    left: 11px;
+    color: #ada6a6;
+
+}
+.calender_title2 {
+    position: absolute;
+    top: 3px;
+    left: 45%;
+}
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: black;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: black;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: black;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: black;
+}
 .part1 input[type="text"],
 .part2 input[type="text"] {
     width: 40%;

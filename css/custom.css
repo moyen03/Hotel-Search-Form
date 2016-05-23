@@ -219,6 +219,7 @@ input[type=submit] {
     width: 100%;
     background: #f6f6f6;
     border: 0;
+    cursor: pointer;
 }
 
 .form_field button:after {

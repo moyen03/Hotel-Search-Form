@@ -190,6 +190,7 @@ label {
 
 input#checkin, input#checkout {
     font-size: .875em;
+    padding-top: 20px;
 }
 
 input.empty {

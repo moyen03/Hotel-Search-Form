@@ -267,3 +267,16 @@ input[type=submit] {
 }
 
 }
+@media only screen and (max-width: 435px) {
+
+    .calender_title2 {
+    left: 46%;
+    }
+}
+@media only screen and (min-width: 435px) and (max-width: 600px) {
+
+    .calender_title2 {
+    left: 45%;
+    }
+}
+

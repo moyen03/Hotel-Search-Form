@@ -232,6 +232,7 @@ input[type=submit] {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     letter-spacing: 0.8px;
+    cursor: pointer;
 }
 
 .form_field button {
